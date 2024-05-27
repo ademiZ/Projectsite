@@ -392,7 +392,6 @@ section {
   font-size: 1.7rem;
   color: #eacf4f;
 }
-
 .contact .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -479,6 +478,7 @@ section {
   height: 15rem;
   resize: none;
 }
+
 
 .blogs .box-container {
   display: -ms-grid;
