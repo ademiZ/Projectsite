@@ -424,3 +424,230 @@ section {
   gap: 2rem;
   margin-bottom: 3rem;
 }
+
+
+.contact .row .form .icons-container .icons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 17rem;
+          flex: 1 1 17rem;
+  text-align: center;
+}
+
+.contact .row .form .icons-container .icons i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  border-radius: 50%;
+  background: #eacf4f;
+  color: #000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact .row .form .icons-container .icons h3 {
+  padding: 1rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.contact .row .form .icons-container .icons p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #aaa;
+}
+
+.contact .row .form form {
+  text-align: center;
+}
+
+.contact .row .form form .box {
+  padding: 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background: none;
+  border: 0.2rem solid rgba(255, 255, 255, 0.3);
+  text-transform: none;
+  width: 100%;
+  margin: .7rem 0;
+}
+
+.contact .row .form form .box:focus {
+  border-color: #eacf4f;
+}
+
+.contact .row .form form textarea {
+  height: 15rem;
+  resize: none;
+}
+
+.blogs .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+
+.blogs .box-container .box {
+  position: relative;
+}
+
+.blogs .box-container .box:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blogs .box-container .box:hover .image .icons {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.blogs .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.blogs .box-container .box .image .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  -webkit-transform: translateY(10rem);
+          transform: translateY(10rem);
+}
+
+.blogs .box-container .box .image .icons a {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.blogs .box-container .box .image .icons a i {
+  padding-right: .5rem;
+  color: #eacf4f;
+}
+
+.blogs .box-container .box .image .icons a:hover {
+  color: #eacf4f;
+}
+
+.blogs .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogs .box-container .box .content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.blogs .box-container .box .content h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.blogs .box-container .box .content p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #aaa;
+  padding: 1.5rem 0;
+}
+
+.footer {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000));
+  background: linear-gradient(transparent, #000);
+}
+
+.footer .links a {
+  margin: 1rem;
+}
+
+.footer .credit {
+  font-size: 2rem;
+  line-height: 2;
+  color: #aaa;
+  padding-top: 2rem;
+}
+
+.footer .credit span {
+  color: #eacf4f;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 3rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 2rem;
+  }
+  .header .logo {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    left: 3rem;
+  }
+  .header #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #000;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar a {
+    display: block;
+    margin: 3rem 2rem;
+  }
+  .header .navbar .space {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .home .content h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
