@@ -18,3 +18,9 @@ menuBtn.onclick = () =>{
    searchForm.classList.remove('active');
 }
 
+window.onscroll = () =>{
+   searchBtn.classList.remove('fa-times');
+   searchForm.classList.remove('active');
+   menuBtn.classList.remove('fa-times');
+   navbar.classList.remove('active');
+}
